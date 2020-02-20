@@ -2,6 +2,11 @@
   "name": "next-app",
   "version": "0.1.0",
   "private": true,
+  "author": "sixnames <slava.kirshman@icloud.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sixnames/next-app.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
