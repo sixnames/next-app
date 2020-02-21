@@ -10,6 +10,8 @@
   "scripts": {
     "up": "mkdir -p data && docker-compose -f docker-compose.dev.yml up -d",
     "postup": "wait-on data && npm run dev",
+    "stop": "docker-compose -f docker-compose.dev.yml stop",
+    "down": "docker-compose -f docker-compose.dev.yml down && rm -rf data/*",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
