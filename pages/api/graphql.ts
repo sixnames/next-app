@@ -11,8 +11,8 @@ const typeDefs = gql`
 
 const resolvers = {
   Query: {
-    users(parent, args, context) {
-      return [{ name: 'Nextjs' }]
+    users() {
+      return [{ name: 'Nextjs' }];
     },
   },
 };
@@ -25,4 +25,5 @@ export const config = {
   },
 };
 
+// noinspection JSUnusedGlobalSymbols
 export default apolloServer.createHandler({ path: '/api/graphql' })
