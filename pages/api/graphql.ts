@@ -1,4 +1,4 @@
-import { ApolloServer, gql } from 'apollo-server-micro'
+import { ApolloServer, gql } from 'apollo-server-micro';
 
 const typeDefs = gql`
   type Query {
@@ -26,4 +26,4 @@ export const config = {
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default apolloServer.createHandler({ path: '/api/graphql' })
+export default apolloServer.createHandler({ path: '/api/graphql' });
